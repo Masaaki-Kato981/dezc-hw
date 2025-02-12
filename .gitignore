@@ -216,3 +216,6 @@ terraform.rc
 
 # Terraform hcl files
 .terraform.lock.hcl
+
+# Parquet Files
+*.parquet
