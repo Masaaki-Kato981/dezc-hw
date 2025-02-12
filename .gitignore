@@ -219,3 +219,6 @@ terraform.rc
 
 # Parquet Files
 *.parquet
+
+# Duckdb files
+*.duckdb
