@@ -2,11 +2,12 @@ version: 2
 
 sources:
   - name: staging
-    database: dtc-de-course-448719
-    schema: zoomcamp
+    database: "{{ env_var('DBT_BIGQUERY_PROJECT', 'dtc_zoomcamp_2025') }}"
+    schema: "{{ env_var('DBT_BIGQUERY_SOURCE_DATASET', 'raw_nyc_tripdata') }}"
     tables:
       - name: green_tripdata
       - name: yellow_tripdata
+      - name: fhv_tripdata
 
 models:
     - name: stg_green_tripdata
