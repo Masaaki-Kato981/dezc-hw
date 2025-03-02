@@ -222,3 +222,11 @@ terraform.rc
 
 # Duckdb files
 *.duckdb
+
+# Spark Files
+*.crc
+
+# Success Files
+_SUCCESS
+
+*.csv
